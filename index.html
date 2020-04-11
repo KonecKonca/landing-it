@@ -45,7 +45,8 @@
           </li>
           <li class="nav-item btn-contact-us pl-4 pl-lg-0">
             <i class="fab fa-viber"></i>
-            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal" disabled="disabled">Позвоните нам <br>+375 44 754-91-12</button>
+            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal" disabled="disabled">+375 44 754-91-12</button>
+            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Напишите нам</button>
           </li>
         </ul>
       </div>
@@ -405,27 +406,34 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title" id="exampleModalLabel">Позвоните нам</h4>
+              <h4 class="modal-title" id="exampleModalLabel">Напишите нам</h4>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="Name">Name</label>
-                  <input type="text" class="form-control" id="Name" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <label for="Message">Message</label>
-                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
-                </div>
+<!--              <form action="https://formspree.io/xjveaypw" method="POST">-->
+<!--                <div class="form-group">-->
+<!--                  <label for="Name">Ваше имя</label>-->
+<!--                  <input type="text" class="form-control" id="Name" placeholder="Ваше имя" name="name">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="Email">Ваш номер телефона</label>-->
+<!--                  <input type="text" class="form-control" id="Email-1" placeholder="Ваш номер телефона" name="_replyto">-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="Message">Ваш вопрос</label>-->
+<!--                  <textarea class="form-control" id="Message" placeholder="Ваш вопрос"></textarea>-->
+<!--                </div>-->
+<!--                <div class="modal-footer">-->
+<!--                  <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>-->
+<!--                  <button type="button" class="btn btn-success">Submit</button>-->
+<!--                </div>-->
+<!--              </form>-->
+
+              <form action="https://formspree.io/xjveaypw" method="POST">
+                <input type="text" name="name" placeholder="Ваше номер телефона">
+                <input type="text" name="_replyto" placeholder="Ваш почтовый ящик">
+                <input type="submit" value="Send">
               </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Submit</button>
+
             </div>
           </div>
         </div>

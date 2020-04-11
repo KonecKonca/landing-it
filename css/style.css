@@ -9591,7 +9591,7 @@ body.sidebar-open::before {
 }
 
 .features-overview .features-width {
-  flex-basis: 61%;
+  flex-basis: 90%;
 }
 
 @media (max-width: 767px) {
